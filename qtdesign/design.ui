@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>606</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gerar e Validar Cpf</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(26, 24, 24);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>102</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(243, 243, 243);</string>
+    </property>
+    <property name="text">
+     <string>Gerar CPF:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelRetorno">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>591</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>30</pointsize>
+      <weight>87</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: green;
+font-weight: 700;
+
+border-style: outset;
+border-width: 1px;
+border-radius: 15px;
+border-color: rgb(243, 243, 243);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputValidaCpf">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>17</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 243, 243);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>17</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(243, 243, 243);</string>
+    </property>
+    <property name="text">
+     <string>Validar Cpf:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnValidaCpf">
+    <property name="geometry">
+     <rect>
+      <x>398</x>
+      <y>17</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>15</pointsize>
+      <weight>87</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(243, 243, 243);
+font-weight: 700;
+background-color: rgb(32, 74, 135);
+border-width: 3px;
+border-radius: 15px;
+border-color: rgb(243, 243, 243);
+cursor: pointer;
+}
+QPushButton:hover {
+border-style: outset;
+color: rgb(243, 243, 243);
+font-weight: 700;
+background-color: rgb(32, 74, 135);
+border-width: 2px;
+border-radius: 15px;
+border-color: rgb(243, 243, 243);
+cursor: pointer;
+}
+QPushButton:pressed {
+border-style: outset;
+color: rgb(243, 243, 243);
+font: 14pt &quot;DejaVu Sans&quot;;
+font-weight: 700;
+background-color: rgb(32, 74, 135);
+border-width: 1px;
+border-radius: 15px;
+border-color: rgb(243, 243, 243);
+cursor: pointer;
+}</string>
+    </property>
+    <property name="text">
+     <string>VALIDAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGeraCpf">
+    <property name="geometry">
+     <rect>
+      <x>398</x>
+      <y>62</y>
+      <width>201</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>15</pointsize>
+      <weight>87</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(243, 243, 243);
+font-weight: 700;
+background-color: rgb(32, 74, 135);
+border-width: 3px;
+border-radius: 15px;
+border-color: rgb(243, 243, 243);
+cursor: pointer;
+}
+QPushButton:hover {
+border-style: outset;
+color: rgb(243, 243, 243);
+font-weight: 700;
+background-color: rgb(32, 74, 135);
+border-width: 2px;
+border-radius: 15px;
+border-color: rgb(243, 243, 243);
+cursor: Pointing Hand;
+}
+QPushButton:pressed {
+border-style: outset;
+color: rgb(243, 243, 243);
+font: 14pt &quot;DejaVu Sans&quot;;
+font-weight: 700;
+background-color: rgb(32, 74, 135);
+border-width: 1px;
+border-radius: 15px;
+border-color: rgb(243, 243, 243);
+}</string>
+    </property>
+    <property name="text">
+     <string>GERAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCopiarCpf">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>170</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>11</pointsize>
+      <weight>87</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(243, 243, 243);
+background-color: none;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: rgb(243, 243, 243);
+font-weight: 700;
+}
+QPushButton:hover {
+color: white;
+background-color: none;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+}
+QPushButton:pressed {
+font: 57 10pt &quot;Ubuntu Medium&quot;;
+font-weight: 700;
+color: white;
+background-color: none;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Copiar/Validar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: 700;</string>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;&gt; Desenvolvido por</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLinkDayan">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>180</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+font-weight: 700;
+border: none;
+height: 1px;
+}
+QPushButton:hover {
+color: rgb(114, 159, 207);
+font-weight: 700;
+border: none;
+height: 1px;
+text-decoration: underline;
+font-style: italic;
+}
+QPushButton:pressed {
+color: white;
+font-weight: 700;
+border: none;
+height: 1px;
+text-decoration: underline;
+font-style: italic;
+}</string>
+    </property>
+    <property name="text">
+     <string>Dayan Ramos Gomes</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

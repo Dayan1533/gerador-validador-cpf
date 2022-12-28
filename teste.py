@@ -1,0 +1,1 @@
+print ("Location: http://www.google.com.br")
